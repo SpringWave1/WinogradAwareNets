@@ -86,7 +86,7 @@ def adaptConfiguration():
     saved_args = parser.parse_args(['@'+args.modelDir+'/FLAGS.txt'])
 
     # We give full freedom to customize this adaptation (except mult, which will use the one used for training the first model)
-    saved_args.GPU = args.GPU
+    # saved_args.GPU = args.GPU
     saved_args.epochs = args.epochs
     saved_args.use_normal_conv = args.use_normal_conv
     saved_args.F = args.F
